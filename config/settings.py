@@ -53,6 +53,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photo',
     'accounts',
+    'disqus',
+    # sites는 장고에서 사용하는 사이트 관리 프레임워크.
+    # 멀티사이트 구성이나 개별 사이트의 도메인 관리 등을 담당
+    # disqus를 사용하려면 필요
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +151,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 로그인 후 이동할 페이지 옵션
 LOGIN_REDIRECT_URL = '/'
+
+# disqus 사용을 위한 설정값
+DISQUS_WEBSITE_SHORTNAME = 'container'
+SITE_ID = 1
