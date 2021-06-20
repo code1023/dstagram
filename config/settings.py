@@ -153,5 +153,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/'
 
 # disqus 사용을 위한 설정값
-DISQUS_WEBSITE_SHORTNAME = 'container'
+DISQUS_WEBSITE_SHORTNAME = 'Django-Instagram'
 SITE_ID = 1
